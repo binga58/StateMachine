@@ -14,6 +14,8 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.7'
 
   s.source_files = 'StateMachine/**/*.{h,m}'
+  
+  s.pod_target_xcconfig = {'DEFINES_MODULE' => 'YES'}
 
   s.public_header_files = ['StateMachine/StateMachine.h', 
     'StateMachine/LSStateMachine.h', 
